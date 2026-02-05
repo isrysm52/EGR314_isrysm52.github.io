@@ -6,19 +6,9 @@ tags:
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
-
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
+This block diagram is for the display and control ESP32 for the rover. This subsystem will use serial cvode to send information to the rover that the rover will then articulate to move and travel or do specific actions. Since this piece is not connected to the roiver, it will need a seperate power system with voltage regulators. THis will also need the OLED screen that will display serial information to the user. 
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
+## A2 Block Diagram 
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+![A2 Block diagram ](ESP32_A1.drawio.png)
