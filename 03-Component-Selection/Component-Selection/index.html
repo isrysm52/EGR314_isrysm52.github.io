@@ -875,14 +875,14 @@
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
 <p>The following sections are the selected major components necessary for  A1 of the wireless communication system. This subsystem focuses on the OLED screen and communicating to the other subsystems to map out the picture. </p>
 <h3 id="power-management">Power Management</h3>
-<p><strong>3.3V voltage regulator 1</strong></p>
+<p><strong>3.3V regulator 1</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p>LD1117DT33CTR</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img alt="VRegulator1" src=""></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="[https://www.digikey.com/en/products/detail/ams-osram/AS5600-ASOM/4914332](https://www.digikey.com/en/products/detail/stmicroelectronics/TD220IDT/1039868)">link to product</a></li>
+<li>$0.40/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117DT33CTR/586235?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20509815359&amp;gbraid=0AAAAADrbLliyZmx9BK5L6rwPuDaWW5-2g&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAoAiDGUQvUyvDstxs-5wdHbAnu0Tvwgpu9TgnrcwJ67x63XssjFMQaAlonEALw_wcB">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -898,25 +898,25 @@
 </tr>
 <tr>
 <td>Compatible ESP32</td>
-<td>Needs special PCB layout.</td>
+<td>few pins</td>
 </tr>
 <tr>
 <td>Meets surface mount constraint of project</td>
-<td>Has had problems with programming the sensor</td>
+<td>in stock</td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> A clock oscillator is easier ...</p>
+<p><strong>Rationale:</strong> Only a few pins make it easier to mount. </p>
 <p><strong>3.3V regulator 2</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
+<p>TLV1117-33CDCY</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$0.91/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV1117-33CDCY/1677125?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=21273973101&amp;gbraid=0AAAAADrbLlj0ovzDO_yai2NTRSSh8NprL&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAC3SixX94Gzbsoar3GId_8D0Os2vkl1xHp72Jrp2GsBw_p_PErV4waAh2zEALw_wcB">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -928,11 +928,11 @@
 <tbody>
 <tr>
 <td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Small</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Can handle high voltage</td>
+<td>Long wait time</td>
 </tr>
 <tr>
 <td>Meets surface mount constraint of project</td>
@@ -942,15 +942,15 @@
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> A clock oscillator is easier ...</p>
+<p><strong>Rationale:</strong>A bit more expensive, with not a lot of pros past the first one. </p>
 <p><strong>3.3V regulator 3</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
+<p>BU33TD3WG-TR</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$0.38/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/rohm-semiconductor/BU33TD3WG-TR/2409428?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20747733577&amp;gbraid=0AAAAADrbLljFQbif_uigdV9GANgIVP3xN&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEDKyQxQp39KxQtFf5nAJ_CS4XkOX_Z056Hu7cVJlJR5UZOKf4LyQKwaAh0HEALw_wcB">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -962,11 +962,11 @@
 <tbody>
 <tr>
 <td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>9 week manufature time</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Can get multiple at a time</td>
+<td>only up to 6V</td>
 </tr>
 <tr>
 <td>Meets surface mount constraint of project</td>
@@ -976,7 +976,7 @@
 </table>
 </li>
 </ol>
-<p><strong>Rationale:</strong> A clock oscillator is easier ...</p>
+<p><strong>Rationale:</strong> Will not hit the 9V minimum</p>
 <p>(<strong>remove this note/placeholder</strong>: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} <strong>THAT WERE SELECTED</strong>)</p>
 <p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">"Appendix - Component Selection Process - Power Management"</a> selection.</p>
 <h3 id="oled-screen">OLED Screen</h3>
