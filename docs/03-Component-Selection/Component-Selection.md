@@ -70,7 +70,7 @@ For more details, review the ["Appendix - Component Selection Process - Power Ma
 
 1. AS5600-ASOM SOIC8 LF T&RDP
 
-    ![OLED_1](OLED_1.webp)
+    ![OLED_1](OLED_1.jpg)
 
 
     * $3.17/each
@@ -88,7 +88,7 @@ For more details, review the ["Appendix - Component Selection Process - Power Ma
 
 1. XC1259TR-ND surface mount crystal
 
-    ![OLED_2](OLED_2.webp)
+    ![OLED_2](OLED_2.jpg)
 
     * $1/each
     * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
@@ -105,7 +105,7 @@ For more details, review the ["Appendix - Component Selection Process - Power Ma
 
 1. XC1259TR-ND surface mount crystal
 
-    ![OLED_3](OLED_3.webp)
+    ![OLED_3](OLED_3.jpg)
 
     * $---/each
     * [link to product](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/)
