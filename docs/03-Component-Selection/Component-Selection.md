@@ -53,7 +53,7 @@ The following sections are the selected major components necessary for  A1 of th
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | 9 week manufature time |
+    | Inexpensive                               | 9 week manufacturing time |
     | Can get multiple at a time                    | only up to 6V                         |
     | Meets surface mount constraint of project |
 
@@ -68,42 +68,42 @@ For more details, review the ["Appendix - Component Selection Process - Power Ma
 
 **OLED 1**
 
-1. AS5600-ASOM SOIC8 LF T&RDP
+1. CROWPANEL PICO DISPLAY-2.4 INCH
 
     ![OLED_1](OLED_1.jpg)
 
 
-    * $3.17/each
-    * [link to product](https://www.digikey.com/en/products/detail/ams-osram/AS5600-ASOM/4914332)
+    * $36.38/each
+    * [link to product](https://www.digikey.com/en/products/detail/elecrow/DIS09024P/24398500?gclsrc=aw.ds&gad_source=1&gad_campaignid=20698867905&gbraid=0AAAAADrbLli8qZJdbmq7cFWXmJIymIBvG&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEA0tXL8ygxC33pYuuSTrbPVZrzGoA0FfyIRg_Q4sjxmkOSqDfjuGVgaAkH1EALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Small |
-    | Compatible ESP32                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project | Has had problems with programming the sensor  |
+    | Clean screen                               | Expansive |
+    | Compatible ESP32                      | More programming                                        |
+    | Meets surface mount constraint of project |  |
 
-**Rationale:** We have used this product before. 
+**Rationale:** More expensive, but it is a higher-quality screen that can potentially do more.
 
 **OLED 2**
 
-1. XC1259TR-ND surface mount crystal
+1. GROVE OLED DISPLAY 1.12" SH1107
 
     ![OLED_2](OLED_2.jpg)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $12.50/each
+    * [link to product](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/104020250/14672112?gclsrc=aw.ds&gad_source=1&gad_campaignid=20243136172&gbraid=0AAAAADrbLljIa7RHYodMuhWdMERyMUzd9&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEArhelXRab3ZXCNusx00oJfkGO6C5ADzqw2HOVdzB3-KjX8GFxT4aUaAhlbEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Inexpensive                               | May not work well with ESP32 |
+    | Bigger screen                   | Only 63 in stock and long manufacturing wait time                   |
     | Meets surface mount constraint of project |
 
-**Rationale:** A clock oscillator is easier ...
+**Rationale:** A lot cheaper, but can be hard to get.
 
 **OLED 3**
 
-1. XC1259TR-ND surface mount crystal
+1. 0.96-inch 12864 128X64 OLED LCD Display Board Module
 
     ![OLED_3](OLED_3.jpg)
 
@@ -114,7 +114,7 @@ For more details, review the ["Appendix - Component Selection Process - Power Ma
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Already have in class                               | From Amazon |
     | Smaller screen                     | Currently unavailable                                   |
-    | Meets surface mount constraint of project |
+    | Meets surface mount constraint of project | Uses I2C  |
 
 **Rationale:** It might be easier to program with a smaller screen, but there is less room for error. 
 
