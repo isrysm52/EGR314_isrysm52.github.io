@@ -2,7 +2,7 @@
 title: Appendix - Controller Table for the ESP32
 ---
 
-
+![Chip](MFG_Attachment-2-ESP32-S3-WROOM-1_sml.webp)
 
 | ESP Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
@@ -15,12 +15,14 @@ title: Appendix - Controller Table for the ESP32
 | Code Examples                                 | ?      | url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals |
 | External Resources URL(s)                     | ?      | Search on Google and YouTube for other resources for each specific microcontroller.                       |
 | Unit cost                                     | 5.06      | Find on Digikey, Jameco, MPJA, or octopart                                                                |
-| Absolute Maximum Current for entire IC        | ?      | Find in the microcontroller datasheet                                                                     |
-| Supply Voltage Range                          | ?      | Min / Nominal / Max / Absolute Max, as found in datasheet                                                 |
-| Absolute Maximum current <br> (for entire IC) | ?      | as found in datasheet                                                                                     |
-| Maximum GPIO current <br> (per pin)           | ?      | as found in datasheet                                                                                     |
-| Supports External Interrupts?                 | ?      | as found in datasheet                                                                                     |
-| Required Programming Hardware, Cost, URL      | ?      | as found in datasheet                                                                                     |
+| Absolute Maximum Current for entire IC        | 97mA      | Find in the microcontroller datasheet                                                                     |
+| Supply Voltage Range                          | 3V-3.6V      | Min / Nominal / Max / Absolute Max, as found in datasheet                                                 |
+| Maximum GPIO current <br> (per pin)           | 355mA      | as found in datasheet                                                                                     |
+| Supports External Interrupts?                 | Yes      | as found in datasheet                                                                                     |
+| Required Programming Hardware, Cost, URL      | Yes      | as found in datasheet                                                                                     |
+
+![Pins](ESP32_Pin.png)
+
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
