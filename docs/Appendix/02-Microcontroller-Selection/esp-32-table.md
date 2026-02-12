@@ -26,14 +26,14 @@ title: Appendix - Controller Table for the ESP32
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
-| UART           | 0           | 0      | ?                              |
-| external SPI\* | 10           | 2      | ?                              |
-| I2C            | 0           | 0      | ?                              |
-| GPIO           | 28           | 2      | ?                              |
-| ADC            | 20           | 0      | ?                              |
-| LED PWM        | 2           | 0      | ?                              |
-| Motor PWM      | 2           | 0      | ?                              |
-| USB Programmer | 1           | 1      | ?                              |
+| UART           | 0           | 0      | -                              |
+| external SPI\* | 10           | 2      |    28,29                           |
+| I2C            | 0           | 0      | -                              |
+| GPIO           | 28           | 2      | 4,5                              |
+| ADC            | 20           | 0      | -                              |
+| LED PWM        | 2           | 0      | -                              |
+| Motor PWM      | 2           | 0      | -                              |
+| USB Programmer | 2           | 1      | 14                              |
 | ...            |
 
 
