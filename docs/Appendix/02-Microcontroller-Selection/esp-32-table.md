@@ -2,6 +2,8 @@
 title: Appendix - Controller Table for the ESP32
 ---
 
+
+
 | ESP Info                                      | Answer | Help                                                                                                      |
 | --------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
 | Model                                         | ESP32-S3-WROOM-1-N4     | Include the entire part number (leave off any letters at the end that specify the package type)           |
@@ -22,14 +24,14 @@ title: Appendix - Controller Table for the ESP32
 
 | Module         | # Available | Needed | Associated Pins (or * for any) |
 | -------------- | ----------- | ------ | ------------------------------ |
-| UART           | ?           | ?      | ?                              |
-| external SPI\* | ?           | ?      | ?                              |
-| I2C            | ?           | ?      | ?                              |
-| GPIO           | ?           | ?      | ?                              |
-| ADC            | ?           | ?      | ?                              |
-| LED PWM        | ?           | ?      | ?                              |
-| Motor PWM      | ?           | ?      | ?                              |
-| USB Programmer | ?           | 1      | ?                              |
+| UART           | 0           | 0      | ?                              |
+| external SPI\* | 10           | 2      | ?                              |
+| I2C            | 0           | 0      | ?                              |
+| GPIO           | 28           | 2      | ?                              |
+| ADC            | 20           | 0      | ?                              |
+| LED PWM        | 2           | 0      | ?                              |
+| Motor PWM      | 2           | 0      | ?                              |
+| USB Programmer | 1           | 1      | ?                              |
 | ...            |
 
 
