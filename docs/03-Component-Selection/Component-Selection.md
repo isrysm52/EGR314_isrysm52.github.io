@@ -8,56 +8,56 @@ The following sections are the selected major components necessary for  A1 of th
 
 ### Power Management
 
-**3.3V voltage regulator 1**
+**3.3V regulator 1**
 
-1. XC1259TR-ND surface mount crystal
+1. LD1117DT33CTR
 
-    ![](image1.png)
+    ![VRegulator1]()
 
-    * $1/each
-    * [link to product]([https://www.digikey.com/en/products/detail/ams-osram/AS5600-ASOM/4914332](https://www.digikey.com/en/products/detail/stmicroelectronics/TD220IDT/1039868))
+    * $0.40/each
+    * [link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117DT33CTR/586235?gclsrc=aw.ds&gad_source=1&gad_campaignid=20509815359&gbraid=0AAAAADrbLliyZmx9BK5L6rwPuDaWW5-2g&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAoAiDGUQvUyvDstxs-5wdHbAnu0Tvwgpu9TgnrcwJ67x63XssjFMQaAlonEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
     | Inexpensive                               | Small |
-    | Compatible ESP32                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project | Has had problems with programming the sensor  |
+    | Compatible ESP32                      |            few pins                            |
+    | Meets surface mount constraint of project |           in stock                       |
 
-**Rationale:** A clock oscillator is easier ...
+**Rationale:** Only a few pins make it easier to mount. 
 
 **3.3V regulator 2**
 
-1. XC1259TR-ND surface mount crystal
+1. TLV1117-33CDCY
 
     ![](image1.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $0.91/each
+    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/TLV1117-33CDCY/1677125?gclsrc=aw.ds&gad_source=1&gad_campaignid=21273973101&gbraid=0AAAAADrbLlj0ovzDO_yai2NTRSSh8NprL&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAC3SixX94Gzbsoar3GId_8D0Os2vkl1xHp72Jrp2GsBw_p_PErV4waAh2zEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Inexpensive                               | Small |
+    |     Can handle high voltage                 |                Long wait time                         |
     | Meets surface mount constraint of project |
 
-**Rationale:** A clock oscillator is easier ...
+**Rationale:**A bit more expensive, with not a lot of pros past the first one. 
 
 **3.3V regulator 3**
 
-1. XC1259TR-ND surface mount crystal
+1. BU33TD3WG-TR
 
     ![](image1.png)
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $0.38/each
+    * [link to product](https://www.digikey.com/en/products/detail/rohm-semiconductor/BU33TD3WG-TR/2409428?gclsrc=aw.ds&gad_source=1&gad_campaignid=20747733577&gbraid=0AAAAADrbLljFQbif_uigdV9GANgIVP3xN&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEDKyQxQp39KxQtFf5nAJ_CS4XkOX_Z056Hu7cVJlJR5UZOKf4LyQKwaAh0HEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Inexpensive                               | 9 week manufature time |
+    | Can get multiple at a time                    | only up to 6V                         |
     | Meets surface mount constraint of project |
 
-**Rationale:** A clock oscillator is easier ...
+**Rationale:** Will not hit the 9V minimum
 
 
 (**remove this note/placeholder**: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} **THAT WERE SELECTED**)
