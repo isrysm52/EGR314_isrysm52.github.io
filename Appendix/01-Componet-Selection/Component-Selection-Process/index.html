@@ -817,36 +817,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
+  <a href="#oled-screen" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actuator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Actuator
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
+      OLED Screen
     </span>
   </a>
   
@@ -1072,36 +1045,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#sensor" class="md-nav__link">
+  <a href="#oled-screen" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#actuator" class="md-nav__link">
-    <span class="md-ellipsis">
-      Actuator
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 1
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
+      OLED Screen
     </span>
   </a>
   
@@ -1138,60 +1084,15 @@
   <h1>Appendix - Module's Major Components Selection Process</h1>
 
 <h2 id="modules-major-components-selection-process">Module's Major Components Selection Process</h2>
-<blockquote>
-<p><strong>For each of the following sections, use <ins>one of the two styles</ins> given near the end. <em>REMOVE THIS NOTE</em></strong></p>
-</blockquote>
 <h3 id="power-management">Power Management</h3>
-<p>(<strong>remove this note/placeholder</strong>: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable})</p>
-<h3 id="sensor">Sensor</h3>
-<p>(<strong>remove this note/placeholder</strong>: if applicable, this is where your go through the sensor selection process, otherwise, remove this section.)</p>
-<h3 id="actuator">Actuator</h3>
-<p>(<strong>remove this note/placeholder</strong>: if applicable, this is where your go through the motor selection process which includes both the driver and motor, otherwise, remove this section.)</p>
-<hr>
-<blockquote>
-<p>Remove the following before submitting!</p>
-</blockquote>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
-<table>
-<thead>
-<tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
+<p><strong>3.3V regulator 1</strong></p>
 <ol>
 <li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
+<p>LD1117DT33CTR</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="VRegulator1.webp" data-desc-position="bottom"><img alt="VRegulator1" src="VRegulator1.webp"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
+<li>$0.40/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117DT33CTR/586235?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20509815359&amp;gbraid=0AAAAADrbLliyZmx9BK5L6rwPuDaWW5-2g&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAoAiDGUQvUyvDstxs-5wdHbAnu0Tvwgpu9TgnrcwJ67x63XssjFMQaAlonEALw_wcB">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1203,25 +1104,29 @@
 <tbody>
 <tr>
 <td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Small</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Compatible ESP32</td>
+<td>few pins</td>
 </tr>
 <tr>
 <td>Meets surface mount constraint of project</td>
-<td></td>
+<td>in stock</td>
 </tr>
 </tbody>
 </table>
 </li>
+</ol>
+<p><strong>Rationale:</strong> Only a few pins make it easier to mount. </p>
+<p><strong>3.3V regulator 2</strong></p>
+<ol>
 <li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
+<p>TLV1117-33CDCY</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="VRegulator2.webp" data-desc-position="bottom"><img alt="VRegulator2" src="VRegulator2.webp"></a></p>
 <ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
+<li>$0.91/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV1117-33CDCY/1677125?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=21273973101&amp;gbraid=0AAAAADrbLlj0ovzDO_yai2NTRSSh8NprL&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAC3SixX94Gzbsoar3GId_8D0Os2vkl1xHp72Jrp2GsBw_p_PErV4waAh2zEALw_wcB">link to product</a></li>
 </ul>
 <table>
 <thead>
@@ -1232,23 +1137,169 @@
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
+<td>Inexpensive</td>
+<td>Small</td>
 </tr>
 <tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
+<td>Can handle high voltage</td>
+<td>Long wait time</td>
 </tr>
 <tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td>Meets surface mount constraint of project</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Rationale:</strong>A bit more expensive, with not a lot of pros past the first one. </p>
+<p><strong>3.3V regulator 3</strong></p>
+<ol>
+<li>
+<p>LM2575D2T-3.3R4G</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="VRegulator3.webp" data-desc-position="bottom"><img alt="LM2575D2T-3.3R4G" src="VRegulator3.webp"></a></p>
+<ul>
+<li>$2.16/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inexpensive</td>
+<td>9 week manufacturing time</td>
+</tr>
+<tr>
+<td>Can get multiple at a time</td>
+<td>only up to 6V</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Rationale:</strong> Will not hit the 9V minimum</p>
+<p><strong>Chosen Regulator</strong></p>
+<p>For more details, review the <a href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management">"Appendix - Component Selection Process - Power Management"</a> selection.</p>
+<h3 id="oled-screen">OLED Screen</h3>
+<p><strong>OLED 1</strong></p>
+<ol>
+<li>
+<p>CROWPANEL PICO DISPLAY-2.4 INCH</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="OLED_1.jpg" data-desc-position="bottom"><img alt="OLED_1" src="OLED_1.jpg"></a></p>
+<ul>
+<li>$36.38/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/elecrow/DIS09024P/24398500?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20698867905&amp;gbraid=0AAAAADrbLli8qZJdbmq7cFWXmJIymIBvG&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEA0tXL8ygxC33pYuuSTrbPVZrzGoA0FfyIRg_Q4sjxmkOSqDfjuGVgaAkH1EALw_wcB">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clean screen</td>
+<td>Expansive</td>
+</tr>
+<tr>
+<td>Compatible ESP32</td>
+<td>More programming</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Rationale:</strong> More expensive, but it is a higher-quality screen that can potentially do more.</p>
+<p><strong>OLED 2</strong></p>
+<ol>
+<li>
+<p>GROVE OLED DISPLAY 1.12" SH1107</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="OLED_2.jpg" data-desc-position="bottom"><img alt="OLED_2" src="OLED_2.jpg"></a></p>
+<ul>
+<li>$12.50/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/104020250/14672112?gclsrc=aw.ds&amp;gad_source=1&amp;gad_campaignid=20243136172&amp;gbraid=0AAAAADrbLljIa7RHYodMuhWdMERyMUzd9&amp;gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEArhelXRab3ZXCNusx00oJfkGO6C5ADzqw2HOVdzB3-KjX8GFxT4aUaAhlbEALw_wcB">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inexpensive</td>
+<td>May not work well with ESP32</td>
+</tr>
+<tr>
+<td>Bigger screen</td>
+<td>Only 63 in stock and long manufacturing wait time</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Rationale:</strong> A lot cheaper, but can be hard to get.</p>
+<p><strong>OLED 3</strong></p>
+<ol>
+<li>
+<p>0.96-inch 12864 128X64 OLED LCD Display Board Module</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="OLED_3.jpg" data-desc-position="bottom"><img alt="OLED_3" src="OLED_3.jpg"></a></p>
+<ul>
+<li>$---/each</li>
+<li><a href="https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/">link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Already have in class</td>
+<td>From Amazon</td>
+</tr>
+<tr>
+<td>Smaller screen</td>
+<td>Currently unavailable</td>
+</tr>
+<tr>
+<td>Meets surface mount constraint of project</td>
+<td>Uses I2C</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p><strong>Rationale:</strong> It might be easier to program with a smaller screen, but there is less room for error. </p>
+<p><strong>Chosen OLED</strong></p>
+<ol>
+<li>
+<p>0.96-inch 12864 128X64 OLED LCD Display Board Module</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="OLED_3.jpg" data-desc-position="bottom"><img alt="OLED_3" src="OLED_3.jpg"></a></p>
+</li>
+</ol>
+<p>This is because it is already in class. This makes it easier to aquire and something that we have worked with before. </p>
 
 
 
