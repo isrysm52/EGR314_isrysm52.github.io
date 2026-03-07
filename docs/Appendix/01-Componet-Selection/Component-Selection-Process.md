@@ -4,72 +4,124 @@ title: Appendix - Module's Major Components Selection Process
 
 ## Module's Major Components Selection Process
 
->**For each of the following sections, use <ins>one of the two styles</ins> given near the end. *REMOVE THIS NOTE***
-
 ### Power Management
 
-(**remove this note/placeholder**: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable})
+**3.3V regulator 1**
 
-### Sensor
+1. LD1117DT33CTR
 
-(**remove this note/placeholder**: if applicable, this is where your go through the sensor selection process, otherwise, remove this section.)
+    ![VRegulator1](VRegulator1.webp)
 
-### Actuator
-
-(**remove this note/placeholder**: if applicable, this is where your go through the motor selection process which includes both the driver and motor, otherwise, remove this section.)
-
------------
-> Remove the following before submitting!
-
-### Style 1
-
-> This is the example found in the assignment, uses more html
-
-*Table 1: Example component selection*
-
-**External Clock Module**
-
-| **Solution**                                                                                                                                                                                    | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
-
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
-
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
-
-### Style 2
-
-> Also acceptable, more markdown friendly
-
-**External Clock Module**
-
-1. XC1259TR-ND surface mount crystal
-
-    ![](image1.png)
-
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+    * $0.40/each
+    * [link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/LD1117DT33CTR/586235?gclsrc=aw.ds&gad_source=1&gad_campaignid=20509815359&gbraid=0AAAAADrbLliyZmx9BK5L6rwPuDaWW5-2g&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAoAiDGUQvUyvDstxs-5wdHbAnu0Tvwgpu9TgnrcwJ67x63XssjFMQaAlonEALw_wcB)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
+    | Inexpensive                               | Small |
+    | Compatible ESP32                      |            few pins                            |
+    | Meets surface mount constraint of project |           in stock                       |
+
+**Rationale:** Only a few pins make it easier to mount. 
+
+**3.3V regulator 2**
+
+1. TLV1117-33CDCY
+
+    ![VRegulator2](VRegulator2.webp)
+
+    * $0.91/each
+    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/TLV1117-33CDCY/1677125?gclsrc=aw.ds&gad_source=1&gad_campaignid=21273973101&gbraid=0AAAAADrbLlj0ovzDO_yai2NTRSSh8NprL&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEAC3SixX94Gzbsoar3GId_8D0Os2vkl1xHp72Jrp2GsBw_p_PErV4waAh2zEALw_wcB)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | Small |
+    |     Can handle high voltage                 |                Long wait time                         |
     | Meets surface mount constraint of project |
 
-1. CTX936TR-ND surface mount oscillator
+**Rationale:**A bit more expensive, with not a lot of pros past the first one. 
 
-    ![](image3.png)
+**3.3V regulator 3**
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+1. LM2575D2T-3.3R4G
 
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+    ![LM2575D2T-3.3R4G](VRegulator3.webp)
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+    * $2.16/each
+    * [link to product](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688)
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | 9 week manufacturing time |
+    | Can get multiple at a time                    | only up to 6V                         |
+    | Meets surface mount constraint of project |
+
+**Rationale:** Will not hit the 9V minimum
+
+**Chosen Regulator**
+
+
+
+For more details, review the ["Appendix - Component Selection Process - Power Management"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) selection.
+
+### OLED Screen
+
+**OLED 1**
+
+1. CROWPANEL PICO DISPLAY-2.4 INCH
+
+    ![OLED_1](OLED_1.jpg)
+
+
+    * $36.38/each
+    * [link to product](https://www.digikey.com/en/products/detail/elecrow/DIS09024P/24398500?gclsrc=aw.ds&gad_source=1&gad_campaignid=20698867905&gbraid=0AAAAADrbLli8qZJdbmq7cFWXmJIymIBvG&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEA0tXL8ygxC33pYuuSTrbPVZrzGoA0FfyIRg_Q4sjxmkOSqDfjuGVgaAkH1EALw_wcB)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Clean screen                               | Expansive |
+    | Compatible ESP32                      | More programming                                        |
+    | Meets surface mount constraint of project |  |
+
+**Rationale:** More expensive, but it is a higher-quality screen that can potentially do more.
+
+**OLED 2**
+
+1. GROVE OLED DISPLAY 1.12" SH1107
+
+    ![OLED_2](OLED_2.jpg)
+
+    * $12.50/each
+    * [link to product](https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/104020250/14672112?gclsrc=aw.ds&gad_source=1&gad_campaignid=20243136172&gbraid=0AAAAADrbLljIa7RHYodMuhWdMERyMUzd9&gclid=Cj0KCQiA7rDMBhCjARIsAGDBuEArhelXRab3ZXCNusx00oJfkGO6C5ADzqw2HOVdzB3-KjX8GFxT4aUaAhlbEALw_wcB)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Inexpensive                               | May not work well with ESP32 |
+    | Bigger screen                   | Only 63 in stock and long manufacturing wait time                   |
+    | Meets surface mount constraint of project |
+
+**Rationale:** A lot cheaper, but can be hard to get.
+
+**OLED 3**
+
+1. 0.96-inch 12864 128X64 OLED LCD Display Board Module
+
+    ![OLED_3](OLED_3.jpg)
+
+    * $---/each
+    * [link to product](https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C/)
+
+    | Pros                                      | Cons                                                             |
+    | ----------------------------------------- | ---------------------------------------------------------------- |
+    | Already have in class                               | From Amazon |
+    | Smaller screen                     | Currently unavailable                                   |
+    | Meets surface mount constraint of project | Uses I2C  |
+
+**Rationale:** It might be easier to program with a smaller screen, but there is less room for error. 
+
+
+**Chosen OLED**
+
+1. 0.96-inch 12864 128X64 OLED LCD Display Board Module
+
+    ![OLED_3](OLED_3.jpg)
+
+This is because it is already in class. This makes it easier to aquire and something that we have worked with before. 
