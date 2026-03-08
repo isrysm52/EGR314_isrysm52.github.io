@@ -29,7 +29,7 @@ title: Appendix - Controller Table for the ESP32
 | UART           | 0           | 0      | -                              |
 | external SPI\* | 10           | 2      |    28,29                           |
 | I2C            | 0           | 0      | -                              |
-| GPIO           | 28           | 2      | 4,5                              |
+| GPIO           | 28           | 11      | ***                              |
 | ADC            | 20           | 0      | -                              |
 | LED PWM        | 2           | 0      | -                              |
 | Motor PWM      | 2           | 0      | -                              |
