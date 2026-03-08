@@ -695,6 +695,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#explinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explinations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Explinations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oled-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED Screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buttons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      LEDs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#resouces" class="md-nav__link">
     <span class="md-ellipsis">
       Resouces
@@ -807,6 +867,66 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#explinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explinations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Explinations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oled-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED Screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buttons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buttons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      LEDs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connections
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#resouces" class="md-nav__link">
     <span class="md-ellipsis">
       Resouces
@@ -844,6 +964,17 @@
 <p>This schematic is designed to show data of the rover by receiving information from subsystem A2. </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../A1_Current.png" data-desc-position="bottom"><img alt="schematic" height:_300_="height:&quot;300;&quot;" src="../A1_Current.png" style="style" width:_350_="width:&quot;350&quot;"></a>
 <strong>Figure ##:</strong> Showing the schematic.</p>
+<h2 id="explinations">Explinations</h2>
+<h3 id="esp32">ESP32</h3>
+<p>This is the brain of the subsystem. It will take information from the other subsystems and display it onto the OLED screen. The ESP32 will also use the buttons to send signals and information to the other subsystems to tell them to move. </p>
+<h3 id="oled-screen">OLED Screen</h3>
+<p>This screen will display serial information from other subsystems. It will also display what motiuon buttons are being pressed to show that it is trying to send commands to the rover. </p>
+<h3 id="buttons">Buttons</h3>
+<p>Other than the main debug, boot, and enable pins, there are 6 other buttons. 4 of these buttons are forward, bafckward, left, and right. The other 2 are spare buttons if they are needed or a button breaks. </p>
+<h3 id="leds">LEDs</h3>
+<p>One LED is for debugging. The other is a LED that pairs with the other subsystems and their LED. This shows that the system is taking and recieving information. </p>
+<h3 id="connections">Connections</h3>
+<p>The 8 pin connectors attach to the other subsystem of the controller. This enables both subsystems to give and recieve serial communication. </p>
 <h2 id="resouces">Resouces</h2>
 <p>The schematic as a PDF download is available <a href="../A1_Sub.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../A1_Controller_Subsystem.zip"><em>here</em></a>.</p>
 
