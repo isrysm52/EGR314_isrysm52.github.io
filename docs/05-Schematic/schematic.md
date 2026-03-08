@@ -7,7 +7,7 @@ title: Module Schematic
 This schematic is designed to show data of the rover by receiving information from subsystem A2. 
 
 
-![schematic](A1_SUB_01.png){style width:"350" height:"300;"}
+![schematic](A1_Current.png){style width:"350" height:"300;"}
 **Figure ##:** Showing the schematic.
 
 
