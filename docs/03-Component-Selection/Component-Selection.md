@@ -18,7 +18,7 @@ The following sections are the selected major components necessary for  A1 of th
 This will hit the voltage minimum and is inexpensive. It has little pins and is a similat schematic to one that we have used before. 
 
 
-For more details, review the ["Appendix - Component Selection Process - Power Management"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) selection.
+For more details, review the ["Appendix - Component Selection Process - Power Management"](https://isrysm52.github.io/EGR314_isrysm52.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/) selection.
 
 ### OLED
 
@@ -30,7 +30,7 @@ For more details, review the ["Appendix - Component Selection Process - Power Ma
 
 This is because it is already in class. This makes it easier to aquire and something that we have worked with before. This is also inexpensive and simple to program. 
 
-For more details, review the ["Appendix - Component Selection Process - OLED"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#OLED) selection.
+For more details, review the ["Appendix - Component Selection Process - OLED"](https://isrysm52.github.io/EGR314_isrysm52.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/) selection.
 
 
 
