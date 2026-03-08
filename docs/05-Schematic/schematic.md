@@ -11,7 +11,7 @@ This schematic is designed to show data of the rover by receiving information fr
 **Figure ##:** Showing the schematic.
 
 
-## Explinations
+## Explanations
 
 ### ESP32
 
