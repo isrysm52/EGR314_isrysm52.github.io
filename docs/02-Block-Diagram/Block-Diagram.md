@@ -11,4 +11,9 @@ This block diagram is for the display and control ESP32 for the rover. This subs
  
 ## A2 Block Diagram 
 
-![A2 Block diagram ](ESP32_A1.drawio.png)
+![A2 Block diagram ](ESP32_A1.drawio (1).png)
+
+
+## Purpose
+
+There are 9 pins, 1 OLED, and two LEDs that make the main part of the block diagram. 3 pins are for boot, enable, and debugging. These are the basics of a schematic with an esp32. The LEDs are also for debugging and communication throughout the systems. The 6 other pins are split between direction (4 pins) and spares. The spares are for if other pins do not work. 
