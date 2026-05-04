@@ -13,7 +13,6 @@ This is the bill of materials for the A1 subsystem. There are many buttons and e
 ![](BOM_A1.png){style width: "2000"}
 **Figure ##:** Example Bill of Materials as a screenshot.
 
-As you can see, the text can be difficult to read without opening the image.
 
 ## Resouce
 
