@@ -9,16 +9,16 @@
       
       
       
-        <link rel="canonical" href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/02-Microcontroller-Selection/esp-32-table/">
+        <link rel="canonical" href="https://embedded-systems-design.github.io/EGR314DataSheetTemplate/09-Resources/Resources/">
       
       
-        <link rel="prev" href="../../01-Componet-Selection/Component-Selection-Process/">
+        <link rel="prev" href="../../08-Hardware%20V2.0/Hardware%20V2.0/">
       
       
-        <link rel="next" href="../../03-Power-Budget/Power-Budget/">
+        <link rel="next" href="../../10-Reflection/Reflection/">
       
       
-      <link rel="icon" href="../../../static/logo314.png">
+      <link rel="icon" href="../../static/logo314.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
             
 
@@ -26,14 +26,14 @@
 
     
       
-        <title>Appendix - Controller Table for the ESP32 - Isaac Smith Datasheet</title>
+        <title>Resources - Isaac Smith Datasheet</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,7 +63,7 @@
     
 
 
-  <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
             html.glightbox-open { overflow: initial; height: 100%; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#full-code-used-in-the-esp32" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -101,9 +106,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Isaac Smith Datasheet" class="md-header__button md-logo" aria-label="Isaac Smith Datasheet" data-md-component="logo">
+    <a href="../.." title="Isaac Smith Datasheet" class="md-header__button md-logo" aria-label="Isaac Smith Datasheet" data-md-component="logo">
       
-  <img src="../../../static/logo314.svg" alt="logo">
+  <img src="../../static/logo314.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Appendix - Controller Table for the ESP32
+              Resources
             
           </span>
         </div>
@@ -195,7 +200,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -214,7 +219,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../01-Requirements/Requirements/" class="md-tabs__link">
+        <a href="../../01-Requirements/Requirements/" class="md-tabs__link">
           
   
     
@@ -234,7 +239,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../02-Block-Diagram/Block-Diagram/" class="md-tabs__link">
+        <a href="../../02-Block-Diagram/Block-Diagram/" class="md-tabs__link">
           
   
     
@@ -254,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../03-Component-Selection/Component-Selection/" class="md-tabs__link">
+        <a href="../../03-Component-Selection/Component-Selection/" class="md-tabs__link">
           
   
     
@@ -274,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../04-BOM/BOM/" class="md-tabs__link">
+        <a href="../../04-BOM/BOM/" class="md-tabs__link">
           
   
     
@@ -294,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../05-Schematic/schematic/" class="md-tabs__link">
+        <a href="../../05-Schematic/schematic/" class="md-tabs__link">
           
   
     
@@ -314,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../06-PCB/pcb/" class="md-tabs__link">
+        <a href="../../06-PCB/pcb/" class="md-tabs__link">
           
   
     
@@ -334,7 +339,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../07-API/API/" class="md-tabs__link">
+        <a href="../../07-API/API/" class="md-tabs__link">
           
   
     
@@ -354,7 +359,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../08-Hardware%20V2.0/Hardware%20V2.0/" class="md-tabs__link">
+        <a href="../../08-Hardware%20V2.0/Hardware%20V2.0/" class="md-tabs__link">
           
   
     
@@ -370,11 +375,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../09-Resources/Resources/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
     
@@ -394,7 +401,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../10-Reflection/Reflection/" class="md-tabs__link">
+        <a href="../../10-Reflection/Reflection/" class="md-tabs__link">
           
   
     
@@ -410,13 +417,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../Appendix/" class="md-tabs__link">
           
   
     
@@ -457,9 +462,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Isaac Smith Datasheet" class="md-nav__button md-logo" aria-label="Isaac Smith Datasheet" data-md-component="logo">
+    <a href="../.." title="Isaac Smith Datasheet" class="md-nav__button md-logo" aria-label="Isaac Smith Datasheet" data-md-component="logo">
       
-  <img src="../../../static/logo314.svg" alt="logo">
+  <img src="../../static/logo314.svg" alt="logo">
 
     </a>
     Isaac Smith Datasheet
@@ -486,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -526,7 +531,7 @@
         
   
   
-    <a href="../../../01-Requirements/Requirements/" class="md-nav__link">
+    <a href="../../01-Requirements/Requirements/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -572,7 +577,7 @@
         
   
   
-    <a href="../../../02-Block-Diagram/Block-Diagram/" class="md-nav__link">
+    <a href="../../02-Block-Diagram/Block-Diagram/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -618,7 +623,7 @@
         
   
   
-    <a href="../../../03-Component-Selection/Component-Selection/" class="md-nav__link">
+    <a href="../../03-Component-Selection/Component-Selection/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -664,7 +669,7 @@
         
   
   
-    <a href="../../../04-BOM/BOM/" class="md-nav__link">
+    <a href="../../04-BOM/BOM/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -710,7 +715,7 @@
         
   
   
-    <a href="../../../05-Schematic/schematic/" class="md-nav__link">
+    <a href="../../05-Schematic/schematic/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -756,7 +761,7 @@
         
   
   
-    <a href="../../../06-PCB/pcb/" class="md-nav__link">
+    <a href="../../06-PCB/pcb/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -802,7 +807,7 @@
         
   
   
-    <a href="../../../07-API/API/" class="md-nav__link">
+    <a href="../../07-API/API/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -848,7 +853,7 @@
         
   
   
-    <a href="../../../08-Hardware%20V2.0/Hardware%20V2.0/" class="md-nav__link">
+    <a href="../../08-Hardware%20V2.0/Hardware%20V2.0/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -871,6 +876,8 @@
       
   
   
+    
+  
   
   
     
@@ -881,33 +888,146 @@
     
     
       
+        
+        
+      
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-    <a href="../../../09-Resources/Resources/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
   
   <span class="md-ellipsis">
     09 Resources
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            09 Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-        <span class="md-nav__icon md-icon"></span>
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-    </a>
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
   
 
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#full-code-used-in-the-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full code used in the ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Full code used in the ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction-button-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction Button Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Direction Button Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oled-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -940,7 +1060,7 @@
         
   
   
-    <a href="../../../10-Reflection/Reflection/" class="md-nav__link">
+    <a href="../../10-Reflection/Reflection/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -963,8 +1083,6 @@
       
   
   
-    
-  
   
   
     
@@ -983,228 +1101,33 @@
     
     
       
-        
-        
-      
       
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked="">
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
-              
+  
+  
+    <a href="../../Appendix/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     Appendix
   </span>
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_12" id="__nav_12_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_12">
-            <span class="md-nav__icon md-icon"></span>
-            Appendix
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../01-Componet-Selection/Component-Selection-Process/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    01 Componet Selection
-  </span>
-  
-
       
         <span class="md-nav__icon md-icon"></span>
       
     </a>
   
 
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12_3" checked="">
-        
-          
-          <label class="md-nav__link" for="__nav_12_3" id="__nav_12_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    02 Microcontroller Selection
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_12_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_12_3">
-            <span class="md-nav__icon md-icon"></span>
-            02 Microcontroller Selection
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix="">
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    Appendix - Controller Table for the ESP32
-  </span>
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../03-Power-Budget/Power-Budget/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    03 Power Budget
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -1228,6 +1151,62 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#full-code-used-in-the-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full code used in the ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Full code used in the ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#main-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direction-button-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction Button Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Direction Button Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oled-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      OLED Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1241,7 +1220,7 @@
                   
 
   
-    <a href="https://github.com/embedded-systems-design/EGR314DataSheetTemplate/edit/main/docs/Appendix/02-Microcontroller-Selection/esp-32-table.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/embedded-systems-design/EGR314DataSheetTemplate/edit/main/docs/09-Resources/Resources.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"></path></svg>
     </a>
@@ -1249,158 +1228,25 @@
   
 
 
-  <h1>Appendix - Controller Table for the ESP32</h1>
+  <h1>Resources</h1>
 
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../MFG_Attachment-2-ESP32-S3-WROOM-1_sml.webp" data-desc-position="bottom"><img alt="Chip" src="../MFG_Attachment-2-ESP32-S3-WROOM-1_sml.webp"></a></p>
-<table>
-<thead>
-<tr>
-<th>ESP Info</th>
-<th>Answer</th>
-<th>Help</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Model</td>
-<td>ESP32-S3-WROOM-1-N4</td>
-<td>Include the entire part number (leave off any letters at the end that specify the package type)</td>
-</tr>
-<tr>
-<td>Product Page URL</td>
-<td><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">Link</a></td>
-<td>Found on digikey.com</td>
-</tr>
-<tr>
-<td>ESP32-S3-WROOM-1-N4 Datasheet URL</td>
-<td><a href="https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf">Link</a></td>
-<td>Do not paste links directly into the table.  Use a <a href="#">link</a></td>
-</tr>
-<tr>
-<td>ESP32 S3 Datasheet URL</td>
-<td><a href="https://www.digikey.com/en/product-highlight/s/schtoeta/esp32-wroom-32-wi-fi-bluetooth-module">Link</a></td>
-<td>Has more detail on functions</td>
-</tr>
-<tr>
-<td>ESP32 S3 Technical Reference Manual URL</td>
-<td>?</td>
-<td>Has details on I/O multiplexing, USB, and others</td>
-</tr>
-<tr>
-<td>Vendor link</td>
-<td><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">Link</a></td>
-<td>Digikey, Jameco, etc.</td>
-</tr>
-<tr>
-<td>Code Examples</td>
-<td>?</td>
-<td>url(s) for libraries on github or other sites related to the microcontroller and your planned peripherals</td>
-</tr>
-<tr>
-<td>External Resources URL(s)</td>
-<td>?</td>
-<td>Search on Google and YouTube for other resources for each specific microcontroller.</td>
-</tr>
-<tr>
-<td>Unit cost</td>
-<td>5.06</td>
-<td>Find on Digikey, Jameco, MPJA, or octopart</td>
-</tr>
-<tr>
-<td>Absolute Maximum Current for entire IC</td>
-<td>97mA</td>
-<td>Find in the microcontroller datasheet</td>
-</tr>
-<tr>
-<td>Supply Voltage Range</td>
-<td>3V-3.6V</td>
-<td>Min / Nominal / Max / Absolute Max, as found in datasheet</td>
-</tr>
-<tr>
-<td>Maximum GPIO current <br> (per pin)</td>
-<td>355mA</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Supports External Interrupts?</td>
-<td>Yes</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
-<td>Required Programming Hardware, Cost, URL</td>
-<td>Yes</td>
-<td>as found in datasheet</td>
-</tr>
-</tbody>
-</table>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../ESP32_Pin.png" data-desc-position="bottom"><img alt="Pins" src="../ESP32_Pin.png"></a></p>
-<table>
-<thead>
-<tr>
-<th>Module</th>
-<th># Available</th>
-<th>Needed</th>
-<th>Associated Pins (or * for any)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UART</td>
-<td>0</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>external SPI*</td>
-<td>10</td>
-<td>2</td>
-<td>28,29</td>
-</tr>
-<tr>
-<td>I2C</td>
-<td>0</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>GPIO</td>
-<td>28</td>
-<td>11</td>
-<td>***</td>
-</tr>
-<tr>
-<td>ADC</td>
-<td>20</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>LED PWM</td>
-<td>2</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Motor PWM</td>
-<td>2</td>
-<td>0</td>
-<td>-</td>
-</tr>
-<tr>
-<td>USB Programmer</td>
-<td>2</td>
-<td>1</td>
-<td>14</td>
-</tr>
-<tr>
-<td>...</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>* The ESP32-S2 has multiple SPI interfaces, but some are for internal use</p>
+<h2 id="full-code-used-in-the-esp32">Full code used in the ESP32</h2>
+<p>Here is a zip file of all the <a href="">code</a> here. </p>
+<h3 id="main-code">Main Code</h3>
+<div class="highlight"><pre><span></span><code><span class="n">function</span> <span class="n">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"notice the blank line before this function?"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="direction-button-code">Direction Button Code</h3>
+<div class="highlight"><pre><span></span><code><span class="n">function</span> <span class="n">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"notice the blank line before this function?"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="oled-code">OLED Code</h4>
+<div class="highlight"><pre><span></span><code><span class="n">function</span> <span class="n">test</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"notice the blank line before this function?"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
@@ -1439,7 +1285,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer">
         
           
-          <a href="../../01-Componet-Selection/Component-Selection-Process/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Appendix - Module's Major Components Selection Process">
+          <a href="../../08-Hardware%20V2.0/Hardware%20V2.0/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Hardware V2.0">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
@@ -1449,20 +1295,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Appendix - Module's Major Components Selection Process
+                Hardware V2.0
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../03-Power-Budget/Power-Budget/" class="md-footer__link md-footer__link--next" aria-label="Next: Appendix - Power Budget">
+          <a href="../../10-Reflection/Reflection/" class="md-footer__link md-footer__link--next" aria-label="Next: Reflection">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Appendix - Power Budget
+                Reflection
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1507,12 +1353,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
