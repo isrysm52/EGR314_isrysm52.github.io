@@ -59,9 +59,11 @@ title: Appendix - Module's Major Components Selection Process
 
 **Chosen Regulator**
 
+1. LM2575D2T-3.3R4G
 
+    ![LM2575D2T-3.3R4G](VRegulator3.webp)
 
-For more details, review the ["Appendix - Component Selection Process - Power Management"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) selection.
+This will hit the voltage minimum and is inexpensive. It has little pins and is a similat schematic to one that we have used before. 
 
 ### OLED Screen
 

@@ -33,10 +33,13 @@ This is because it is already in class. This makes it easier to aquire and somet
 For more details, review the ["Appendix - Component Selection Process - OLED"](https://isrysm52.github.io/EGR314_isrysm52.github.io/Appendix/01-Componet-Selection/Component-Selection-Process/) selection.
 
 
+## Summary
 
+ | Component  | Cost | Amount |
+ | LM2575D2T-3.3R4G | $2.16 | 1 |
+ | 0.96-inch 12864 128X64 OLED LCD Display Board Module | $0.00 | 1 |
 
-
-
+ For more details see the [Component Selection Process](docs/Appendix/01-Componet-Selection/Component-Selection-Process.md) in the Appendix. 
 
 
 
