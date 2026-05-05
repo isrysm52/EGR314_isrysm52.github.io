@@ -1,0 +1,10 @@
+.scroll-box {
+  width: 300px;
+  overflow-x: auto;
+  border: 1px solid black;
+}
+
+.wide-content {
+  width: 600px;
+  white-space: nowrap;
+}
